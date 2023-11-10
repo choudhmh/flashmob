@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flashmob Results</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" charset="utf-8"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.2.0/chartjs-plugin-datalabels.min.js" integrity="sha512-JPcRR8yFa8mmCsfrw4TNte1ZvF1e3+1SdGMslZvmrzDYxS69J7J49vkFL8u6u8PlPJK+H3voElBtUCzaXj+6ig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+  <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+<div><h1 align="center">Flashmob Results</h1></div>
+
+  <form>
+  
+  <table width='100%' border="0">
+  <tr>
+    <td>  
+      <div id="rectangle" align="center">
+      <div id="names">
+      <table width='99%' border="0" height="50%">
+        <tr>
+          <td><div id="textStyle">Syrdariya</div><input id="Syrdariya" onchange="adddata()" class="mytext"></td>
+        <td><div> Alatau </div><input id="Alatau" type="text" onchange="adddata()" class="mytext"></td>
+        <td><div> Zhumbaktas</div><input id="Zhumbaktas" type="text" onchange="adddata()" class="mytext"></td>
+        <td><div>Ushkonyr</div><input id="Ushkonyr" type="text" onchange="adddata()" class="mytext"></td>
+        <td><div>Akzhaiyk</div><input id="Akzhaiyk" type="text" onchange="adddata()" class="mytext"></td>
+      </tr>
+      <tr>
+        <td><div>Koktobe</div><input id="Koktobe" type="text" onchange="adddata()" class="mytext"></td>
+      <td><div>Samuryk</div><input id="Samuryk" type="text" onchange="adddata()" class="mytext"></td>
+      <td><div>Okzhetpes</div><input id="Okzhetpes" type="text" onchange="adddata()" class="mytext"></td>
+      <td><div>Baiterek</div><input id="Baiterek" type="text" onchange="adddata()" class="mytext"></td>
+      <td><div>Ordabasy</div><input id="Ordabasy" type="text" onchange="adddata()" class="mytext"></td>
+    </tr>
+    <tr>
+      <td><div>Altai</div><input id="Altai" type="text" onchange="adddata()" class="mytext"></td>
+    <td><div>Nuralem</div><input id="Nuralem" type="text" onchange="adddata()" class="mytext"></td>
+    <td><div>Otyrar</div><input id="Otyrar" type="text" onchange="adddata()" class="mytext"></td>
+    <td colspan="2">&nbsp;</td>
+    </tr>
+      </table>
+      <p>&nbsp;</p>
+      <!-- <div>Syrdariya<input id="Syrdariya" onchange="adddata()"></div>
+      <div> Alatau <input id="Alatau" type="text" onchange="adddata()"></div>
+    Zhumbaktas<input id="Zhumbaktas" type="text" onchange="adddata()">
+    Ushkonyr<input id="Ushkonyr" type="text" onchange="adddata()">
+    Akzhaiyk<input id="Akzhaiyk" type="text" onchange="adddata()">
+    Koktobe<input id="Koktobe" type="text" onchange="adddata()">
+    Samuryk<input id="Samuryk" type="text" onchange="adddata()">
+    Okzhetpes<input id="Okzhetpes" type="text" onchange="adddata()">
+    Baiterek<input id="Baiterek" type="text" onchange="adddata()">
+    Ordabasy<input id="Ordabasy" type="text" onchange="adddata()">
+    Altai<input id="Altai" type="text" onchange="adddata()">
+    Nuralem<input id="Nuralem" type="text" onchange="adddata()">
+    Otyrar<input id="Otyrar" type="text" onchange="adddata()"> -->
+</div></td>
+  </tr>
+  <br>
+  <tr>
+    <td><div id="chart">
+  <canvas id="myChart"></canvas>
+  <script src="script.js"></script>
+
+  </div></td>
+  </tr>
+</table>
+
+   
+    <br>
+    
+  
+   <!-- <input type="button" value="Add data" onclick="adddata()"> -->
+ 
+  
+  </form>
+   </div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+
+*
+#my_Chart {
+    width: 80%;
+    
+    margin: 0 auto;
+  }
+
+  #rectangle{
+    margin: 0 auto;
+    border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 10px;
+  width: 60%;
+  height: 120px;
+    }
+
+    .mytext {
+      width: 100px;
+  }
+
+  h1{
+    margin: 0 auto;
+    color: #e30707;
+    font-size: 2vw;
+}
+
+  /* #textStyle {
+      font-size: 2vw;
+} */

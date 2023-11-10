@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+<form id="form">
+
+    <div>
+        Syrdariya: <input id="SyrdariyaTotal" type="text"></textarea>
+        Alatau: <input id="AlatauTotal" type="text"></textarea>
+</div>
+<div>
+    <button type="submit">Send Total</button> 
+</div>
+
+</form>
+
+<script>
+    const form = document.getElementById('form');
+
+    const SyrdariyaTotal = document.getElementById('SyrdariyaTotal');
+    const AlatauTotal = document.getElementById('AlatauTotal');
+
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+
+const SyrdariyaTotalValue = SyrdariyaTotal.value;
+const AlatauTotalValue = AlatauTotal.value;
+
+localStorage.setItem('Syrdariya', SyrdariyaTotalValue);
+localStorage.setItem('Alatau', AlatauTotalValue);
+console.log(localStorage)
+window.location.href = "test.html"
+})
+</script>
+
+    <!-- <form>
+        <fieldset>
+        <legend>Test</legend>
+        <label>First Name: </label><input type="text" name="firstname" placeholder="Testing..."></input><br><br>
+        <label>Last Name: </label><input type="text" name="lastname" placeholder="Testing..."></input><br><br>
+        <label>Age: </label><input type="number" name="age" min="1" max="120" value="18"></input><br><br>
+        <label>Subscribe to Newsletter: </label><input name="news" type="radio" value="yes"></input> <input name="news" type="radio" value="no"></input><br><br>
+        <p style="text-align:center;">Waiting...</p>
+        </fieldset>
+        </form>
+        
+        <script> 
+            document.querySelector("form").addEventListener("input", () => {
+                clearTimeout();
+                
+                var first_name = document.querySelector('input[name="firstname"]').value;
+                var last_name = document.querySelector('input[name="lastname"]').value;
+                var age = document.querySelector('input[name="age"]').value;
+                var news = document.querySelector('input[name="news"]:checked').value;
+                
+                if(first_name && last_name && age && news){
+                    document.querySelector("form p").innerHTML = "Success!!!<br>First Name: " + first_name + "<br>Last Name: " + last_name + "<br>Age: " + age + "<br>Newsletter: " + news;
+                    
+                    setTimeout(function(){
+                        $.ajax({
+                           url: "?firstname=" + first_name + "&lastname=" + last_name + "&age=" + age + "&newsletter=" + news,
+                           type: "GET"
+                        });
+                    }, 500);
+                    
+                }else{
+                    document.querySelector("form p").innerHTML = "Waiting...";
+                }
+            });</script> -->
+       
+</body>
+</html>
